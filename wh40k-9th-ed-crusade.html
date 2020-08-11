@@ -5,11 +5,7 @@
       <span class="sheet-h1_sec1">
         Crusade Force Name:
       </span>
-      <input
-        class="sheet-input_sec1"
-        name="cfname"
-        placeholder="Flames of the Emperor"
-      />
+      <input class="sheet-input_sec1" type="text" name="attr_cfname" placeholder="Flames of the Emperor" />
     </span>
     <span class="sheet-div_sec1">
       <span class="sheet-h1_sec1">
@@ -17,11 +13,7 @@
           Crusade Faction:
         </span>
       </span>
-      <input
-        class="sheet-input_sec1"
-        name="cfaction"
-        placeholder="Space Marines"
-      />
+      <input class="sheet-input_sec1" type="text" name="attr_cfaction" placeholder="Space Marines" />
     </span>
     <span class="sheet-div_sec1">
       <span class="sheet-h1_sec1">
@@ -29,7 +21,7 @@
           Player Name:
         </span>
       </span>
-      <input class="sheet-input_sec1" name="pname" placeholder="John Doe" />
+      <input class="sheet-input_sec1" type="text" name="attr_pname" placeholder="John Doe" />
     </span>
   </div>
   <div class="sheet-sec2">
@@ -40,7 +32,7 @@
             Battle Tally
           </span>
         </span>
-        <input class="sheet-input_sec2" name="btally" placeholder="0" />
+        <input class="sheet-input_sec2" type="number" name="attr_btally" placeholder="0" />
       </div>
     </span>
     <span class="sheet-div_sec2">
@@ -50,7 +42,7 @@
             Battles Won
           </span>
         </span>
-        <input class="sheet-input_sec2" name="bwon" placeholder="0" />
+        <input class="sheet-input_sec2" type="number" name="attr_bwon" placeholder="0" />
       </div>
     </span>
     <span class="sheet-div_sec2">
@@ -60,7 +52,7 @@
             Requisition Pts
           </span>
         </span>
-        <input class="sheet-input_sec2" name="rpoints" placeholder="0" />
+        <input class="sheet-input_sec2" type="number" name="attr_rpoints" placeholder="0" />
       </div>
     </span>
     <span class="sheet-div_sec2">
@@ -70,7 +62,7 @@
             Supply Limit
           </span>
         </span>
-        <input class="sheet-input_sec2" name="slimit" placeholder="0" />
+        <input class="sheet-input_sec2" type="number" name="attr_slimit" placeholder="0" />
       </div>
     </span>
     <span class="sheet-div_sec2">
@@ -80,7 +72,7 @@
             Supply Used
           </span>
         </span>
-        <input class="sheet-input_sec2" name="sused" />
+        <input class="sheet-input_sec2" type="number" name="attr_sused" />
       </div>
     </span>
   </div>
@@ -103,22 +95,13 @@
         </div>
         <input
           class="sheet-input_sec3"
-          name="u_crusadec"
+          type="text"
+          name="attr_u-crusadec"
           style="width: 45%;"
           placeholder="Infantry Squad"
         />
-        <input
-          class="sheet-input_sec3"
-          name="u_powerr"
-          style="width: 23.5%;"
-          placeholder="0"
-        />
-        <input
-          class="sheet-input_sec3"
-          name="u_crusadep"
-          style="width: 23.55%;"
-          placeholder="0"
-        />
+        <input class="sheet-input_sec3" type="number" name="attr_u-power" style="width: 23.5%;" placeholder="0" />
+        <input class="sheet-input_sec3" type="number" name="attr_u-crusadep" style="width: 23.55%;" placeholder="0" />
       </fieldset>
       <div class="sheet-div_sec3_bottom">.</div>
     </div>
@@ -129,7 +112,8 @@
     </div>
     <textarea
       class="sheet-input_sec4"
-      name="u_cgoals"
+      name="attr_u-cgoals"
+      type="text"
       placeholder="Successfully retrieved stolen Imperial relic from T'au forces on Vash'Ya with minimal losses."
     ></textarea>
   </div>
