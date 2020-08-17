@@ -1,64 +1,39 @@
 <div class="sheet-bg">
   <img class="sheet-ps" src="https://i.imgur.com/0Wgx85q.png" />
-  <div class="sheet-sec1">
-    <span class="sheet-div_sec1">
-      <span class="sheet-h1_sec1">
-        Crusade Force Name:
-      </span>
-      <input
-        class="sheet-input_sec1"
-        type="text"
-        name="attr_cfname"
-        maxlength="26"
-        placeholder="Flames of the Emperor"
-      />
-    </span>
-    <span class="sheet-div_sec1">
-      <span class="sheet-h1_sec1">
-        <span class="sheet-h1_sec1_item2">
-          Crusade Faction:
+    <div class="sheet-sec1">
+      <span class="sheet-div_sec1">
+        <span class="sheet-h1_sec1">
+          Crusade Force Name:
         </span>
+        <input class="sheet-input_sec1" type="text" name="attr_cfname" maxlength="60" placeholder="Flames of the Emperor" />
       </span>
-      <input
-        class="sheet-input_sec1"
-        type="text"
-        name="attr_cfaction"
-        maxlength="26"
-        placeholder="Space Marines"
-      />
-    </span>
-    <span class="sheet-div_sec1">
-      <span class="sheet-h1_sec1">
-        <span class="sheet-h1_sec1_item3">
-          Player Name:
+      <span class="sheet-div_sec1">
+        <span class="sheet-h1_sec1"> 
+          <span class="sheet-h1_sec1_item2">
+            Crusade Faction:
+          </span>
         </span>
+        <input class="sheet-input_sec1" type="text" name="attr_cfaction" maxlength="60" placeholder="Space Marines" />
       </span>
-      <input
-        class="sheet-input_sec1"
-        type="text"
-        name="attr_pname"
-        maxlength="26"
-        placeholder="John Doe"
-      />
-    </span>
-  </div>
-  <div class="sheet-sec2">
-    <span class="sheet-div_sec2">
+      <span class="sheet-div_sec1">
+        <span class="sheet-h1_sec1">
+          <span class="sheet-h1_sec1_item3">
+            Player Name:
+          </span>
+        </span>
+        <input class="sheet-input_sec1" type="text" name="attr_pname" maxlength="60" placeholder="John Doe" />
+      </span>
+    </div>
+    <div class="sheet-sec2">
+        <span class="sheet-div_sec2">
       <div class="sheet-block_sec2">
         <span class="sheet-h1_sec2">
           <span class="sheet-h1_sec2_item1">
             Battle Tally
           </span>
         </span>
-        <input
-          class="sheet-input_sec2"
-          type="number"
-          name="attr_btally"
-          min="0"
-          max="999"
-          placeholder="0"
-        />
-      </div>
+        <input class="sheet-input_sec2" type="number" name="attr_btally" min="0" max="999" maxlength="3" placeholder="0" />
+    </div>
     </span>
     <span class="sheet-div_sec2">
       <div class="sheet-block_sec2">
@@ -66,92 +41,65 @@
           <span class="sheet-h1_sec2_item2">
             Battles Won
           </span>
-        </span>
-        <input
-          class="sheet-input_sec2"
-          type="number"
-          name="attr_bwon"
-          min="0"
-          max="999"
-          placeholder="0"
-        />
-      </div>
     </span>
-    <span class="sheet-div_sec2">
+    <input class="sheet-input_sec2" type="number" name="attr_bwon" min="0" max="999" maxlength="3" placeholder="0" />
+</div>
+</span>
+<span class="sheet-div_sec2">
       <div class="sheet-block_sec2">
         <span class="sheet-h1_sec2">
           <span class="sheet-h1_sec2_item3">
             Requisition Pts
           </span>
-        </span>
-        <input
-          class="sheet-input_sec2"
-          type="number"
-          name="attr_rpoints"
-          min="0"
-          max="999"
-          placeholder="0"
-        />
-      </div>
-    </span>
-    <span class="sheet-div_sec2">
+</span>
+<input class="sheet-input_sec2" type="number" name="attr_rpoints" min="0" max="999" maxlength="3" placeholder="0" />
+</div>
+</span>
+<span class="sheet-div_sec2">
       <div class="sheet-block_sec2">
         <span class="sheet-h1_sec2">
           <span class="sheet-h1_sec2_item4">
             Supply Limit
           </span>
-        </span>
-        <input
-          class="sheet-input_sec2"
-          type="number"
-          name="attr_slimit"
-          min="0"
-          max="999"
-          placeholder="0"
-        />
-      </div>
-    </span>
-    <span class="sheet-div_sec2">
+</span>
+<input class="sheet-input_sec2" type="number" name="attr_slimit" min="0" max="999" maxlength="3" placeholder="0" />
+</div>
+</span>
+<span class="sheet-div_sec2">
       <div class="sheet-block_sec2">
         <span class="sheet-h1_sec2">
           <span class="sheet-h1_sec2_item5">
             Supply Used
           </span>
-        </span>
-        <input
-          class="sheet-input_sec2"
-          type="number"
-          name="attr_sused"
-          min="0"
-          max="999"
-          disabled="disabled"
-        />
-      </div>
-    </span>
-  </div>
-  <div class="sheet-sec3">
+</span>
+<input class="sheet-input_sec2" type="number" name="attr_sused" min="0" max="999" maxlength="3" disabled="disabled" />
+</div>
+</span>
+</div>
+<div class="sheet-sec3">
     <div class="sheet-h1_sec3_row1">
-      <span class="sheet-div_sec3_row1_head1">
+        <span class="sheet-div_sec3_row1_head1">
         Commander
       </span>
-      <span class="sheet-div_sec3_row1_head2">
+        <span class="sheet-div_sec3_row1_head2">
         Power Rating
       </span>
-      <span class="sheet-div_sec3_row1_head3">
+        <span class="sheet-div_sec3_row1_head3">
         Crusade Pts
       </span>
     </div>
     <div class="sheet-div_sec3_table">
-      <div class="sheet-h1_sec3_sub">
-        Unit:
-      </div>
+        <span class="sheet-expandable-section">
+        <div class="sheet-h1_sec3_sub" style="padding-right: 2.95em;">
+          Unit:
+        </div>
       <input
         class="sheet-input_sec3"
         type="text"
         name="attr_u-commander"
-        maxlength="26"
-        style="width: 45%;"
-        placeholder="Sergeant"
+        maxlength="60"
+        style="width: 45.7%;"
+        placeholder="Captain - Billy Bob"
       />
       <input
         class="sheet-input_sec3"
@@ -159,7 +107,8 @@
         name="attr_u-power"
         min="0"
         max="999"
-        style="width: 23.5%;"
+        maxlength = "3"
+        style="width: 20.5%;"
         placeholder="0"
       />
       <input
@@ -168,66 +117,193 @@
         name="attr_u-crusadep"
         min="0"
         max="999"
-        style="width: 23.55%;"
+        maxlength = "3"
+        style="width: 11.25%; border-right: 0px;"
         placeholder="0"
       />
-      <div class="sheet-h1_sec3_row2">
-        <span class="sheet-div_sec3_row2_head1">
+	    <input class="sheet-expand-control" type="hidden" name="attr_expand_item" value="1"/>
+	    <label class="sheet-expand-button">
+        <input type="checkbox" name="attr_expand_item" value="1" checked="true"/>
+          <span class="expand-state pictos">4</span>
+        </input>
+        </label>
+        </span>
+
+
+        <div class="sheet-expanded-view">
+            <span><div class="sheet-h1_sec3_sub" style="padding-right: 2.6em;">
+        Type:
+      </div>
+      <input
+        class="sheet-input_sec3"
+        type="text"
+        name="attr_u-ctype"
+        maxlength="60"
+        style="width: 34.8%;"
+        placeholder="Captain"
+      /></span>
+            <div class="sheet-h1_sec3_sub">
+                Name:
+            </div>
+            <input class="sheet-input_sec3" type="text" name="attr_u-cname" maxlength="60" style="width: 40%;" placeholder="Billy Bob" /></span>
+
+            <span><div class="sheet-h1_sec3_sub">
+        Keywords:
+      </div>
+      <input
+        class="sheet-input_sec3"
+        type="text"
+        name="attr_u-keys"
+        maxlength="200"
+        style="width: 34.75%;"
+        placeholder="<Chapter Name>"
+      /></span>
+            <div class="sheet-h1_sec3_sub">
+                Power Pts:
+            </div>
+            <input class="sheet-input_sec3" type="number" name="attr_u-ppts" min="0" max="999" maxlength="3" style="width: 9.2%;" placeholder="0" /></span>
+            <div class="sheet-h1_sec3_sub">
+                Crusade Pts:
+            </div>
+            <input class="sheet-input_sec3" type="number" name="attr_u-cpts" min="0" max="999" maxlength="3" style="width: 9.2%;" placeholder="0" /></span>
+
+            <div class="sheet-tabwrapper">
+                <label class="sheet-tab" style="margin-left:1em">
+        <input name="attr_sheet_type" type="radio" value="equipment"/><span>Equipment</span>
+      </label>
+                <label class="sheet-tab">
+        <input name="attr_sheet_type" type="radio" value="requisitions"/><span>Requisitions</span>
+      </label>
+                <label class="sheet-tab">
+        <input name="attr_sheet_type" type="radio" value="experience"/><span>Experience</span>
+      </label>
+                <label class="sheet-tab">
+        <input name="attr_sheet_type" type="radio" value="psychic"/><span>Psychic</span>
+      </label>
+            </div>
+
+            <input class="type" name="attr_sheet_type" type="hidden" value="equipment" />
+
+
+            <div class="sheet-equipment">
+                <textarea class="sheet-input_sec3_ta" name="attr_u-equipment" type="text" maxlength="5000" placeholder="Jump Pack, Bolt Pistol, Chainsword" style="height: 61.5px;"></textarea>
+                <textarea class="sheet-input_sec3_ta" name="attr_u-equipmentother" type="text" maxlength="5000" placeholder="Other upgrades & selectable abilities" style="height: 61.5px;"></textarea>
+            </div>
+            <div class="sheet-requisitions">
+                <textarea class="sheet-input_sec3_ta" name="attr_u-requisitions" type="text" maxlength="5000" placeholder="Requisitions placeholder"></textarea>
+            </div>
+
+
+            <div class="sheet-experience">
+                <div class="sheet-gridwrap">
+                    <div class="sheet-grid1">
+                        <textarea class="sheet-input_sec3_ta" name="attr_u-bhonors" type="text" maxlength="5000" placeholder="BH placeholder" style="height: 61.5px;"></textarea>
+                    </div>
+                    <div class="sheet-grid2">
+                        <textarea class="sheet-input_sec3_ta" name="attr_u-bscars" type="text" maxlength="5000" placeholder="BS placeholder" style="height: 61.5px;"></textarea>
+                    </div>
+                    <div class="sheet-grid3">
+                        <span class="sheet-h1_sec3_colhead">
+            EXP
+          </span>
+                        <input class="sheet-input_sec3_exp" type="number" name="u-exp" min="0" max="999" maxlength="3" placeholder="0" />
+                    </div>
+                    <div class="sheet-grid4">
+                        <span class="sheet-h1_sec3_colhead">
+            Rank
+          </span>
+
+                        <input class="sheet-input_sec3_rankph" type="text" name="u-rank" maxlength="60" placeholder="Rank ph" value="Untempered" />
+                    </div>
+                </div>
+                <div class="sheet-gridwrap2">
+                    <div class="sheet-grid2_i1">
+                        <span class="sheet-h1_sec3_sub" style="background-color: #211f1e; padding-right: 47.6%;">
+            Battles Played:
+          </span>
+                        <input class="sheet-input_sec3_batpl" type="number" name="u-expbatpl" min="0" max="999" maxlength="3" placeholder="0" />
+                    </div>
+                    <div class="sheet-grid2_i2">
+                        <span class="sheet-h1_sec3_sub" style="background-color: #211f1e; padding-right: 43.8%">
+            Battles Survived:
+          </span>
+                        <input class="sheet-input_sec3_batsu" type="number" name="u-expbatsu" min="0" max="999" maxlength="3" placeholder="0" />
+                    </div>
+                    <div class="sheet-grid2_i3" style="background-color: #211f1e;">
+                        <span class="sheet-h1_sec3_sub">
+            Total Enemy Units Destroyed:
+          </span>
+                    </div>
+                    <div class="sheet-grid2_i4">
+                        <input class="sheet-input_sec3_row" type="number" name="u-exptotaldes" min="0" max="999" maxlength="3" placeholder="0" />
+                    </div>
+                    <div class="sheet-grid2_i5" style="background-color: #211f1e;">
+                        <span class="sheet-h1_sec3_sub">
+            Enemy Units Destroyed with Psychic:
+          </span>
+                    </div>
+                    <div class="sheet-grid2_i6">
+                        <input class="sheet-input_sec3_row" type="number" name="u-exppsydes" min="0" max="999" maxlength="3" placeholder="0" />
+                    </div>
+                    <div class="sheet-grid2_i7" style="background-color: #211f1e;">
+                        <span class="sheet-h1_sec3_sub">
+            Enemy Units Destroyed with Ranged:
+          </span>
+                    </div>
+                    <div class="sheet-grid2_i8">
+                        <input class="sheet-input_sec3_row" type="number" name="u-exprandes" min="0" max="999" maxlength="3" placeholder="0" />
+                    </div>
+                    <div class="sheet-grid2_i9" style="background-color: #211f1e;">
+                        <span class="sheet-h1_sec3_sub">
+            Enemy Units Destroyed With Melee:
+          </span>
+                    </div>
+                    <div class="sheet-grid2_i10">
+                        <input class="sheet-input_sec3_row" type="number" name="u-expmeldes" min="0" max="999" maxlength="3" placeholder="0" />
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="sheet-psychic">
+                <textarea class="sheet-input_sec3_ta" name="attr_u-psychic" type="text" maxlength="5000" placeholder="Smite, Psychic Barrier"></textarea>
+            </div>
+
+
+        </div>
+        <div class="sheet-collapsed-view"></div>
+
+
+        <div class="sheet-h1_sec3_row2">
+            <span class="sheet-div_sec3_row2_head1" style="margin-left: 4.25em; margin-right: 7.5em;">
           Crusade Cards
         </span>
-        <span class="sheet-div_sec3_row2_head2">
+            <span class="sheet-div_sec3_row2_head2" style="margin-right: .3em;">
           Power Rating
         </span>
-        <span class="sheet-div_sec3_row2_head3">
+            <span class="sheet-div_sec3_row2_head3">
           Crusade Pts
         </span>
-      </div>
-      <div class="sheet-div_sec3_table">
-        <fieldset class="repeating_units">
-          <div class="sheet-h1_sec3_sub">
-            Unit:
-          </div>
-          <input
-            class="sheet-input_sec3"
-            type="text"
-            name="attr_u-crusadec"
-            maxlength="26"
-            style="width: 45%;"
-            placeholder="Infantry Squad"
-          />
-          <input
-            class="sheet-input_sec3"
-            type="number"
-            name="attr_u-power"
-            min="0"
-            max="999"
-            style="width: 23.5%;"
-            placeholder="0"
-          />
-          <input
-            class="sheet-input_sec3"
-            type="number"
-            name="attr_u-crusadep"
-            min="0"
-            max="999"
-            style="width: 23.55%;"
-            placeholder="0"
-          />
-        </fieldset>
-        <div class="sheet-div_sec3_bottom">.</div>
-      </div>
+        </div>
+        <div class="sheet-div_sec3_table">
+            <fieldset class="repeating_units">
+                <div class="sheet-h1_sec3_sub" style="padding-right: 2.95em">
+                    Unit:
+                </div>
+                <input class="sheet-input_sec3" type="text" name="attr_u-crusadec" maxlength="60" style="width: 45.7%;" placeholder="Infantry Squad" />
+                <input class="sheet-input_sec3" type="number" name="attr_u-power" min="0" max="999" maxlength="3" style="width: 20.5%;" placeholder="0" />
+                <input class="sheet-input_sec3" type="number" name="attr_u-crusadep" min="0" max="999" maxlength="3" style="width: 19.7%;" placeholder="0" />
+            </fieldset>
+            <div class="sheet-div_sec3_bottom">.</div>
+        </div>
     </div>
-    <div class="sheet-sec4">
-      <div class="sheet-h1_sec4">
+</div>
+<div class="sheet-sec4">
+    <div class="sheet-h1_sec4">
         Crusade Goals, Information, and Notable Victories
-      </div>
-      <textarea
-        class="sheet-input_sec4"
-        name="attr_u-cgoals"
-        type="text"
-        maxlength="5000"
-        placeholder="Successfully retrieved stolen Imperial relic from T'au forces on Vash'Ya with minimal losses."
-      ></textarea>
     </div>
-  </div>
+    <textarea class="sheet-input_sec4" name="attr_u-cgoals" type="text" maxlength="5000" placeholder="Successfully retrieved stolen Imperial relic from T'au forces on Vash'Ya with minimal losses."></textarea>
+</div>
 </div>
