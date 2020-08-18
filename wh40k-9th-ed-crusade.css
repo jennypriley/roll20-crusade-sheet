@@ -36,7 +36,7 @@ input[type='number'] {
   font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 2rem;
-  padding: 0.25em 0.5em 0.25em 1.25em;
+  padding: 0.24em 0.5em 0.24em 1.25em;
 }
 
 .sheet-h1_sec1_item2 {
@@ -66,7 +66,7 @@ input[type='number'] {
   outline: none;
   line-height: 1.2em;
   margin-top: -0.5em;
-  padding: 0.4em;
+  padding: 0.33em;
   width: 50%;
   color: #000000;
   font-size: 1.5rem;
@@ -103,8 +103,8 @@ input[type='number'] {
 }
 
 .sheet-h1_sec2_item5 {
-  padding-left: 0.84em;
-  padding-right: 0.84em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
 }
 
 .sheet-div_sec2 {
@@ -129,7 +129,7 @@ input[type='number'] {
   background: #f1e1c680;
   outline: none;
   line-height: 3em;
-  margin-top: -0.55em;
+  margin-top: -0.56em;
   margin-bottom: 3rem;
   padding: 0 1.5em 0 1.5em;
   width: 5.75em !important;
@@ -189,7 +189,7 @@ input[type='number'] {
   font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
-  padding: 0.4em 0.4em 0.6em 1em;
+  padding: 0.4em 0.4em 0.65em 1em;
   display: inline;
 }
 
@@ -395,7 +395,7 @@ input[name='attr_expand_item'][value='1'] ~ div.sheet-expanded-view {
   transition: 0.2s ease-in-out;
   padding: 0.4em 1.25em 0.4em 0.2em;
   vertical-align: top;
-  width: 4.85%;
+  width: 4.7%;
   border: 2px solid #211f1e;
   border-width: 0 2px 2px 0;
   background: #f1e1c680;
@@ -462,7 +462,7 @@ input[name='attr_expand_item'][value*='0'] ~ span.sheet-expand-state {
 
 .sheet-tabwrapper {
   background: #211f1e;
-  height: 2.2em;
+  height: 2.3em;
 }
 
 input[type='radio'] {
