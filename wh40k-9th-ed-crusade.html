@@ -72,7 +72,8 @@
             Supply Used
           </span>
         </span>
-        <input class="sheet-input_sec2" type="number" name="attr_supply_used" disabled="disabled" placeholder="0" value="(@{supply_used}+@{u-commanderpl})"/>
+        <input type="hidden" name="attr_supply_used" />
+        <input class="sheet-input_sec2" type="number" name="attr_supply_display" disabled="true" placeholder="0" value="(@{supply_used})"/>
       </div>
     </span>
   </div>
@@ -106,7 +107,7 @@
         <input
           class="sheet-input_sec3"
           type="number"
-          name="attr_u-commanderpl"
+          name="attr_u-commanderpl-display"
           min="0"
           max="999"
           maxlength = "3"
@@ -118,7 +119,7 @@
         <input
           class="sheet-input_sec3"
           type="number"
-          name="attr_u-commandercp"
+          name="attr_u-commandercp-display"
           min="0"
           max="999"
           maxlength = "3"
@@ -506,11 +507,15 @@
               destinations.forEach((destination, index) => {
                   output[destination] = idArray.reduce((total, id) => total + getValue(section, id, fields[index]) * commonMultipliers.reduce((subtotal, mult) => subtotal * getValue(section, id, mult), 1), 0);
               });
-              setAttrs(output);
+              getAttrs(['u-commanderpl'], v => {
+                output['supply_used'] += parseInt(v['u-commanderpl']);
+                setAttrs(output);
+              })
+
           });
       });
   };
-  on('change:repeating_units:u-plevel remove:repeating_units', function() {
+  on('change:u-commanderpl change:repeating_units:u-plevel remove:repeating_units', function() {
     repeatingSum("supply_used","units","u-plevel");
   });
 </script>
