@@ -4,8 +4,7 @@
   margin-top: -10px;
   margin-bottom: -10px;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
+  background-size: auto;
   width: 650px;
 }
 
@@ -217,8 +216,8 @@ input[type='number'] {
 }
 
 .sheet-sec4 {
-  margin-right: 0.6em;
-  width: 97%;
+  width: 96%;
+  margin-left: 0.5em;
 }
 
 .sheet-h1_sec4 {
@@ -229,7 +228,7 @@ input[type='number'] {
   background-color: #211f1e;
   border: solid 1em #211f1e;
   border-radius: 0.5em 0.5em 0 0;
-  width: 98.3%;
+  width: 96.5%;
 }
 
 .sheet-input_sec4 {
@@ -240,7 +239,7 @@ input[type='number'] {
   font-size: 1.5rem;
   color: #000000;
   resize: none;
-  width: 98.5%;
+  width: 96.75%;
   padding: 1.25rem;
 }
 
@@ -317,6 +316,10 @@ input[type='number'] {
   content: '3';
 }
 
+.itemcontrol {
+  height: 2.3em;
+}
+
 .repcontrol_del {
   background: #bc3531;
   margin-right: 0.5em;
@@ -329,6 +332,7 @@ input[type='number'] {
   display: inline-block;
   width: 1.75rem;
   padding: 0.35rem;
+  margin-right: 3.5em;
 }
 
 .repcontrol_del:hover {
@@ -347,6 +351,7 @@ input[type='number'] {
   display: inline-block;
   width: 1.75rem;
   padding: 0.35rem;
+  margin-left: 4em;
 }
 
 .repcontrol_move:hover {
@@ -383,7 +388,7 @@ input[name='attr_expand_item'][value='1'] ~ div.sheet-expanded-view {
   /*grid-template-areas:"button";*/
   /*place-items:center;*/
   /*width:auto;*/
-  height: auto;
+  height: 1.75rem;
 
   display: inline-flex;
   place-items: flex-end;
@@ -457,7 +462,7 @@ input[name='attr_expand_item'][value*='0'] ~ span.sheet-expand-state {
 
 .sheet-tabwrapper {
   background: #211f1e;
-  height: 2.3em;
+  height: 2.2em;
 }
 
 input[type='radio'] {
@@ -465,7 +470,7 @@ input[type='radio'] {
   width: 0;
 }
 
-.sheet-tab input[type='radio']:checked + span {
+/* .sheet-tab input[type='radio']:checked + span {
   background: #fafafa;
   color: #211f1e;
   cursor: default;
@@ -475,6 +480,12 @@ input[type='radio'] {
   border-radius: 0.25em 0.25em 0 0;
   border-width: 0 3px 0 3px;
   margin: 0 -3px 0 -3px;
+} */
+
+.sheet-tab input[type='radio']:checked + span {
+  cursor: default;
+  color: #71a534;
+  border-color: #71a534;
 }
 
 .sheet-equipment,
@@ -492,8 +503,7 @@ input[name='attr_sheet_type'][value*='experience'] ~ div.sheet-experience {
 }
 
 .sheet-tab:hover {
-  background-color: #71a534;
-  color: #fafafa;
+  border-color: #71a534;
 }
 
 .sheet-input_sec3_ta {
@@ -636,7 +646,7 @@ input[name='attr_sheet_type'][value*='experience'] ~ div.sheet-experience {
 }
 
 .sheet-input_sec3_batpl {
-  height: 3.3rem !important;
+  height: 3.2rem !important;
   background: #f1e1c680;
   border: 2px solid #211f1e;
   border-width: 0px 0px 2px 0px;
@@ -649,7 +659,7 @@ input[name='attr_sheet_type'][value*='experience'] ~ div.sheet-experience {
 }
 
 .sheet-input_sec3_batsu {
-  height: 3.3rem !important;
+  height: 3.2rem !important;
   background: #f1e1c680;
   border: 2px solid #211f1e;
   border-width: 0px 2px 2px 0px;
