@@ -357,9 +357,9 @@ input[type='number'] {
   outline: none;
 }
 
-input[name='attr_expand_item'][value='1'] ~ div.sheet-expanded-view
-  /*input[name='attr_expand_item'][value='0'] ~ div.sheet-collapsed-view */ {
-  display: none !important;
+/* input[name='attr_expand_item'][value='0'] ~ div.sheet-collapsed-view, */
+input[name='attr_expand_item'][value='1'] ~ div.sheet-expanded-view {
+  display: none;
 }
 /*.sheet-expandable-section:not(:hover) > .sheet-expand-button {*/
 /*  opacity: 0;*/
@@ -373,7 +373,7 @@ input[name='attr_expand_item'][value='1'] ~ div.sheet-expanded-view
 
 .sheet-expanded-view {
   margin-top: -0.77em;
-  margin-bottom: -1.8em;
+  margin-bottom: 0.6em;
 }
 
 .sheet-expandable-section > .sheet-expand-button {
@@ -425,11 +425,12 @@ input[name='attr_expand_item'][value='1'] ~ div.sheet-expanded-view
   margin-bottom: 0.5em;
   clip-path: var(--spanPolygon);
   min-height: 15px;
+  margin-top: -2.45em;
 }
 .sheet-expandable-section > .sheet-expand-button > .sheet-expand-state {
   grid-area: button;
 }
-.sheet-expand-button > input[name='attr_expand_item'][value*='0'] ~ .sheet-expand-state {
+input[name='attr_expand_item'][value*='0'] ~ span.sheet-expand-state {
   transform: rotate(90deg);
 }
 
