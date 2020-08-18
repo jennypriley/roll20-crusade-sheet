@@ -228,7 +228,7 @@ input[type='number'] {
   background-color: #211f1e;
   border: solid 1em #211f1e;
   border-radius: 0.5em 0.5em 0 0;
-  width: 96.5%;
+  width: 96.55%;
 }
 
 .sheet-input_sec4 {
@@ -427,10 +427,10 @@ input[name='attr_expand_item'][value='1'] ~ div.sheet-expanded-view {
 }
 .sheet-collapsed-view {
   display: grid;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.8em;
   clip-path: var(--spanPolygon);
   min-height: 15px;
-  margin-top: -2.45em;
+  margin-top: -2.74em;
 }
 .sheet-expandable-section > .sheet-expand-button > .sheet-expand-state {
   grid-area: button;
@@ -655,7 +655,7 @@ input[name='attr_sheet_type'][value*='experience'] ~ div.sheet-experience {
   font-size: 1.5rem;
   line-height: 1.2em;
   color: #000000;
-  width: 14.4% !important;
+  width: 14.5% !important;
 }
 
 .sheet-input_sec3_batsu {
@@ -668,5 +668,5 @@ input[name='attr_sheet_type'][value*='experience'] ~ div.sheet-experience {
   font-size: 1.5rem;
   line-height: 1.2em;
   color: #000000;
-  width: 14.4% !important;
+  width: 14.47% !important;
 }
