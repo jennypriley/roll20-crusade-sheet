@@ -72,7 +72,7 @@
             Supply Used
           </span>
         </span>
-        <input class="sheet-input_sec2" type="number" name="attr_supply_used" disabled="disabled" placeholder="0" value="@{supply_used}+@{u-commanderpl}"/>
+        <input class="sheet-input_sec2" type="number" name="attr_supply_used" disabled="disabled" placeholder="0" value="(@{supply_used}+@{u-commanderpl})"/>
       </div>
     </span>
   </div>
@@ -113,7 +113,7 @@
           style="width: 20.5%;"
           placeholder="0"
           disabled="true"
-          value="@{u-commanderpl}"
+          value="(@{u-commanderpl})"
         />
         <input
           class="sheet-input_sec3"
@@ -125,7 +125,7 @@
           style="width: 11.25%; border-right: 0px;"
           placeholder="0"
           disabled="true"
-          value="@{attr_u-commandercp}"
+          value="(@{u-commandercp})"
         />
         <input class="sheet-expand-control" type="hidden" name="attr_expand_item" value="1"/>
         <label class="sheet-expand-button">
