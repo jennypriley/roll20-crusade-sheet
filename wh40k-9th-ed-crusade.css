@@ -317,7 +317,7 @@ input[type='number'] {
 }
 
 .itemcontrol {
-  height: 2.3em;
+  height: 2.3em !important;
 }
 
 .repcontrol_del {
