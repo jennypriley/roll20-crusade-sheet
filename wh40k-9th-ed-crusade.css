@@ -429,9 +429,7 @@ input[name='attr_expand_item'][value='1'] ~ div.sheet-expanded-view
 .sheet-expandable-section > .sheet-expand-button > .sheet-expand-state {
   grid-area: button;
 }
-.sheet-expand-button
-  > input[name='attr_expand_item'][value*='0']
-  ~ .sheet-expand-state {
+.sheet-expand-button > input[name='attr_expand_item'][value*='0'] ~ .sheet-expand-state {
   transform: rotate(90deg);
 }
 
