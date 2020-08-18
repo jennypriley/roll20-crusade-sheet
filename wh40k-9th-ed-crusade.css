@@ -655,7 +655,7 @@ input[name='attr_sheet_type'][value*='experience'] ~ div.sheet-experience {
   font-size: 1.5rem;
   line-height: 1.2em;
   color: #000000;
-  width: 15% !important;
+  width: 14.4% !important;
 }
 
 .sheet-input_sec3_batsu {
@@ -668,5 +668,5 @@ input[name='attr_sheet_type'][value*='experience'] ~ div.sheet-experience {
   font-size: 1.5rem;
   line-height: 1.2em;
   color: #000000;
-  width: 15% !important;
+  width: 14.4% !important;
 }
