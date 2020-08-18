@@ -72,7 +72,8 @@
             Supply Used
           </span>
         </span>
-        <input class="sheet-input_sec2" type="number" name="attr_supply_used" disabled="disabled" placeholder="0" value="(@{supply_used}+@{u-commanderpl})"/>
+        <input type="hidden" name="attr_supply_used" />
+        <input class="sheet-input_sec2" type="number" name="attr_supply_display" disabled="disabled" placeholder="0" value="(@{supply_used})"/>
       </div>
     </span>
   </div>
@@ -106,7 +107,7 @@
         <input
           class="sheet-input_sec3"
           type="number"
-          name="attr_u-commanderpl"
+          name="attr_u-commanderpl-display"
           min="0"
           max="999"
           maxlength = "3"
@@ -118,7 +119,7 @@
         <input
           class="sheet-input_sec3"
           type="number"
-          name="attr_u-commandercp"
+          name="attr_u-commandercp-display"
           min="0"
           max="999"
           maxlength = "3"
@@ -195,19 +196,26 @@
         </div>
         <input class="type" name="attr_sheet_type" type="hidden" value="equipment" />
         <div class="sheet-equipment">
-          <textarea class="sheet-input_sec3_ta" name="attr_u-equipment" type="text" maxlength="5000" placeholder="Jump Pack, Bolt Pistol, Chainsword" style="height: 61.5px;"></textarea>
-          <textarea class="sheet-input_sec3_ta" name="attr_u-equipmentother" type="text" maxlength="5000" placeholder="Other upgrades & selectable abilities" style="height: 61.5px;"></textarea>
+          <span class="sheet-talabel">Gear:</span>
+          <textarea class="sheet-input_sec3_ta" name="attr_u-equipment" type="text" maxlength="5000" placeholder="Jump Pack, Bolt Pistol, Chainsword" style="height: 35px;"></textarea>
+          <span class="sheet-talabel" style="border-width: 0px 2px 0px 2px;">Other upgrades & selectable abilities:</span>
+          <textarea class="sheet-input_sec3_ta" name="attr_u-equipmentother" type="text" maxlength="5000" placeholder="Imagifier Aura" style="height: 35px;"></textarea>
         </div>
         <div class="sheet-requisitions">
-            <textarea class="sheet-input_sec3_ta" name="attr_u-requisitions" type="text" maxlength="5000" placeholder="Requisitions placeholder"></textarea>
+          <span class="sheet-talabel">Warlord Traits:</span>
+          <textarea class="sheet-input_sec3_ta" name="attr_u-reqwt" type="text" maxlength="5000" placeholder="Fear Made Manifest" style="height: 35px;"></textarea>
+          <span class="sheet-talabel" style="border-width: 0px 2px 0px 2px;">Relics:</span>
+          <textarea class="sheet-input_sec3_ta" name="attr_u-reqrel" type="text" maxlength="5000" placeholder="The Endurant Protector" style="height: 35px;"></textarea>
         </div>
         <div class="sheet-experience">
           <div class="sheet-gridwrap">
             <div class="sheet-grid1">
-                <textarea class="sheet-input_sec3_ta" name="attr_u-bhonors" type="text" maxlength="5000" placeholder="BH placeholder" style="height: 61.5px;"></textarea>
+              <span class="sheet-talabel">Battle Honors:</span>
+              <textarea class="sheet-input_sec3_ta" name="attr_u-bhonors" type="text" maxlength="5000" placeholder="Swift and Agile, Auto Loader" style="height: 35px;"></textarea>
             </div>
             <div class="sheet-grid2">
-                <textarea class="sheet-input_sec3_ta" name="attr_u-bscars" type="text" maxlength="5000" placeholder="BS placeholder" style="height: 61.5px;"></textarea>
+              <span class="sheet-talabel" style="border-width: 0px 2px 0px 2px;">Battle Scars:</span>
+              <textarea class="sheet-input_sec3_ta" name="attr_u-bscars" type="text" maxlength="5000" placeholder="Chest Wound, Deep Scars" style="height: 35px;"></textarea>
             </div>
             <div class="sheet-grid3">
               <span class="sheet-h1_sec3_colhead">
@@ -249,7 +257,7 @@
             </span>
           </div>
           <div class="sheet-grid2_i6">
-            <input class="sheet-input_sec3_row" type="number" name="u-exppsydes" min="0" max="999" maxlength="3" placeholder="0" />
+            <input class="sheet-input_sec3_row" type="number" name="u-exppsydes" min="0" max="999" maxlength="3" placeholder="0"/>
           </div>
           <div class="sheet-grid2_i7" style="background-color: #211f1e;">
             <span class="sheet-h1_sec3_sub">
@@ -270,7 +278,8 @@
           </div>
         </div>
         <div class="sheet-psychic">
-          <textarea class="sheet-input_sec3_ta" name="attr_u-psychic" type="text" maxlength="5000" placeholder="Smite, Psychic Barrier"></textarea>
+          <span class="sheet-talabel">Psychic Powers:</span>
+          <textarea class="sheet-input_sec3_ta" name="attr_u-psychic" type="text" maxlength="5000" placeholder="Smite, Psychic Barrier" style="height:123px;"></textarea>
         </div>
       </div>
       <div class="sheet-collapsed-view">
@@ -392,19 +401,20 @@
             </div>
             <input class="type" name="attr_sheet_type" type="hidden" value="equipment" />
             <div class="sheet-equipment">
-              <textarea class="sheet-input_sec3_ta" name="attr_u-equipment" type="text" maxlength="5000" placeholder="Jump Pack, Bolt Pistol, Chainsword" style="height: 61.5px;"></textarea>
-              <textarea class="sheet-input_sec3_ta" name="attr_u-equipmentother" type="text" maxlength="5000" placeholder="Other upgrades & selectable abilities" style="height: 61.5px;"></textarea>
+              <textarea class="sheet-input_sec3_ta" name="attr_u-equipment" type="text" maxlength="5000" placeholder="Jump Pack, Bolt Pistol, Chainsword" style="height: 35px;"></textarea>
+              <textarea class="sheet-input_sec3_ta" name="attr_u-equipmentother" type="text" maxlength="5000" placeholder="Other upgrades & selectable abilities" style="height: 35px;"></textarea>
             </div>
             <div class="sheet-requisitions">
-                <textarea class="sheet-input_sec3_ta" name="attr_u-requisitions" type="text" maxlength="5000" placeholder="Requisitions placeholder"></textarea>
+              <textarea class="sheet-input_sec3_ta" name="attr_u-reqwt" type="text" maxlength="5000" placeholder="Warlord Traits" style="height: 35px;"></textarea>
+              <textarea class="sheet-input_sec3_ta" name="attr_u-reqrel" type="text" maxlength="5000" placeholder="Relics" style="height: 35px;"></textarea>
             </div>
             <div class="sheet-experience">
               <div class="sheet-gridwrap">
                 <div class="sheet-grid1">
-                    <textarea class="sheet-input_sec3_ta" name="attr_u-bhonors" type="text" maxlength="5000" placeholder="BH placeholder" style="height: 61.5px;"></textarea>
+                    <textarea class="sheet-input_sec3_ta" name="attr_u-bhonors" type="text" maxlength="5000" placeholder="BH placeholder" style="height: 35px;"></textarea>
                 </div>
                 <div class="sheet-grid2">
-                    <textarea class="sheet-input_sec3_ta" name="attr_u-bscars" type="text" maxlength="5000" placeholder="BS placeholder" style="height: 61.5px;"></textarea>
+                    <textarea class="sheet-input_sec3_ta" name="attr_u-bscars" type="text" maxlength="5000" placeholder="BS placeholder" style="height: 35px;"></textarea>
                 </div>
                 <div class="sheet-grid3">
                   <span class="sheet-h1_sec3_colhead">
@@ -506,11 +516,15 @@
               destinations.forEach((destination, index) => {
                   output[destination] = idArray.reduce((total, id) => total + getValue(section, id, fields[index]) * commonMultipliers.reduce((subtotal, mult) => subtotal * getValue(section, id, mult), 1), 0);
               });
-              setAttrs(output);
+              getAttrs(['u-commanderpl'], v => {
+                output['supply_used'] += parseInt(v['u-commanderpl']);
+                setAttrs(output);
+              })
+
           });
       });
   };
-  on('change:repeating_units:u-plevel remove:repeating_units', function() {
+  on('change:u-commanderpl change:repeating_units:u-plevel remove:repeating_units', function() {
     repeatingSum("supply_used","units","u-plevel");
   });
 </script>
